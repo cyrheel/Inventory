@@ -1,38 +1,169 @@
 .App {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: snow;
+}
+
+h1 {
+  font-size: 180%;
+  width: 22%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+  font-size: 200%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  width: 85%;
+  border: 2px solid black;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0.5% 0 1.5% 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  width: 20%;
+  margin: 1.5%;
+  padding: 0.5% 2%;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: blanchedalmond;
+  font-size: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+br {
+  height: 1vh;
+}
+
+/*### Header ### */
+
+.header {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+}
+
+/*### Search Bar ###*/
+
+.searchBar-container {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  align-items: center;
+}
+
+.searchParams-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.filters {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 22%;
+  height: 7vh;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: blanchedalmond;
+}
+
+/*### Add Item ###*/
+
+.addItem-container {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  align-items: center;
+}
+
+.addParams-container {
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left,
+.right {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addParams-container > input {
+  width: 50%;
+}
+
+/*### Items Display ###*/
+
+.item-display {
+  width: 100%;
+}
+
+.items-container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+}
+
+.items-container > thead,
+tbody {
+  width: 90%;
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: wheat;
+  border-bottom: 1px solid black;
+}
+
+.table-header > th {
+  width: 20%;
+  font-size: 120%;
+  margin: 1%;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+}
+
+.item > th {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 115%;
+  border-bottom: 1px solid black;
+}
+
+.del-btn {
+  background: wheat;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-bottom: 2%;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
 }

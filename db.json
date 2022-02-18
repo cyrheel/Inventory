@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "apple",
+      "price": "2.99",
+      "type": "fruit",
+      "brand": "test",
+      "id": 1
+    },
+    {
+      "name": "orange",
+      "price": "1.99",
+      "type": "fruit",
+      "brand": "cool",
+      "id": 3
+    },
+    {
+      "name": "banana",
+      "price": "2.49",
+      "type": "fruit",
+      "brand": "uncool",
+      "id": 4
+    }
+  ]
+}
